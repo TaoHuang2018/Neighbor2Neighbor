@@ -4,7 +4,7 @@ Official Pytorch implementation for the paper accepted by CVPR 2021.
 
 ## Resources
 
-- [Paper](https://arxiv.org/pdf/2101.02824.pdf) (arXiv)
+- [Arxiv](https://arxiv.org/pdf/2101.02824.pdf)
 
 ## Citations
 
