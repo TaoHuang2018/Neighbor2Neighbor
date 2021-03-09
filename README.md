@@ -1,4 +1,4 @@
-# Neighbor2Neighbor: Self-Supervised Denoising from Single Noisy Images - Official Pytorch implementation of the CVPR 2021 paper
+# Neighbor2Neighbor: Self-Supervised Denoising from Single Noisy Images - Official Pytorch Implementation of the CVPR 2021 Paper
 
 
 ## Resources
