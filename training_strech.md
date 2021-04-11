@@ -1,5 +1,5 @@
-# about Synthetic Data Generator
+1. about Synthetic Data Generator
 
-# about Random Image Sub-sampler
+2. about Random Image Sub-sampler
 
-# about Training Strategy
+3. about Training Strategy
