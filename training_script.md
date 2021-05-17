@@ -126,6 +126,7 @@ def generate_subimages(img, mask):
 3. about Training Strategy
 
 ```
+noise_adder = AugmentNoise(style="gauss25")
 for iteration, clean in enumerate(Dataloader):
   # preparing synthetic noisy images
   clean = clean / 255.0
