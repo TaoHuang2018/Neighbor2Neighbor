@@ -7,6 +7,10 @@ _In the last few years, image denoising has benefited a lot from the fast develo
 
 **Official Pytorch implementation for the paper accepted by CVPR 2021.**
 
+![Denoising comparison](img/readme_figure1.png "Denoising comparison")
+
+![Denoising comparison](img/readme_figure2.png "Denoising comparison")
+
 ## Resources
 
 - [Arxiv](https://arxiv.org/pdf/2101.02824.pdf)
