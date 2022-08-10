@@ -19,7 +19,7 @@ from arch_unet import UNet
 
 parser = argparse.ArgumentParser()
 parser.add_argument("--noisetype", type=str, default="gauss25")
-parser.add_argument('--data_dir', type=str, default='./Imagenet_val_gauss_fix_0.25')
+parser.add_argument('--data_dir', type=str, default='./Imagenet_val_gauss_fix_25')
 parser.add_argument('--val_dirs', type=str, default='./validation')
 parser.add_argument('--save_model_path', type=str, default='./results')
 parser.add_argument('--log_name', type=str, default='unet_gauss25_b4e100r02')
@@ -366,8 +366,8 @@ for epoch in range(1, opt.n_epoch + 1):
     for iteration, noisy in enumerate(TrainingLoader):
         st = time.time()
         # Tom: Do not use clean images in training and add noise to them in every epoch,
-        # which may cause clean images to be measured multiple times, and the method
-        # falls back to noise2noise across epoches.
+        # which may cause clean images to be measured multiple times with different additive noise, 
+        # and the method falls back to noise2noise across epochs.
         # Instead, we should use the exact same noisy images in every epoch.
 
         #clean = clean / 255.0

@@ -25,7 +25,7 @@ def add_train_noise(style, params, x, img_range=255.0):
     shape = x.shape
     if style == "gauss_fix":
         std = params[0]
-        noise = np.random.randn(shape[0], shape[1], shape[2]) * std * img_range
+        noise = np.random.randn(shape[0], shape[1], shape[2]) * std
         return np.clip(x + noise, 0, img_range).astype(np.uint8)
     elif style == "gauss_range":
         min_std, max_std = params
@@ -48,8 +48,8 @@ def load_and_save(img_path, style, params):
 
 input_dir = "/home/tomheaven/实验/ILSVRC2012/ILSVRC2012_img_val"
 style = 'gauss_fix'
-params = [0.25]
-save_dir = "./Imagenet_val_%s_%.2f" % (style, params[0])
+params = [25]
+save_dir = "./Imagenet_val_%s_%d" % (style, params[0])
 
 images = []
 pattern = os.path.join(input_dir, '**/*')
